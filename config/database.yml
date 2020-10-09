@@ -70,6 +70,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: fbreplica_production
   username: ysqmctbamsreew
   password: 61e70dc801448e934ee1764bb1b76d776adecd5b7baadf0147b4e6b1b3bd7dea
