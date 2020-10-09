@@ -24,8 +24,8 @@ default: &default
 development:
   <<: *default
   database: fbreplica_development
-  username: pg_dev_user
-  password: <%= Figaro.env.pg_dev_password %>
+  username: ysqmctbamsreew
+  password: 61e70dc801448e934ee1764bb1b76d776adecd5b7baadf0147b4e6b1b3bd7dea
   host: localhost
   port: 5432
 
@@ -44,8 +44,8 @@ development:
 test:
   <<: *default
   database: fbreplica_test
-  username: pg_dev_user
-  password: <%= Figaro.env.pg_dev_password %>
+  username: ysqmctbamsreew
+  password: 61e70dc801448e934ee1764bb1b76d776adecd5b7baadf0147b4e6b1b3bd7dea
   host: localhost
   port: 5432
 
@@ -71,5 +71,5 @@ test:
 production:
   <<: *default
   database: fbreplica_production
-  username: fbreplica
-  password: <%= ENV['FBREPLICA_DATABASE_PASSWORD'] %>
+  username: ysqmctbamsreew
+  password: 61e70dc801448e934ee1764bb1b76d776adecd5b7baadf0147b4e6b1b3bd7dea
